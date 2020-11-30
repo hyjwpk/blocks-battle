@@ -25,8 +25,8 @@ void initial(void)
 	radius=10; 
 
 	boardx=Width/2;
-	boardy=High-boardhigh/2;
 	boardhigh=High/20;
+	boardy=High-boardhigh/2;
 	boardwidth=Width/2;
 	boardleft=boardx-boardwidth/2;
 	boardright=boardx+boardwidth/2;
