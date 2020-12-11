@@ -8,9 +8,12 @@
 #define BRICKCOLOR GREEN
 #define BOARDCOLOR LIGHTBLUE
 #define SPEED 2
+#define Heartx WIDTH2/2
+#define Hearty HIGH/2
 
 extern int ballx, bally, x_move, y_move, radius, ballcolor;
 extern int boardx, boardy, boardhigh, boardwidth, boardleft, boardright, boardtop, boardbottom;
 extern int brickhigh, brickwidth, bricknumber;
-extern int nowheart, stage;
-extern int map[BRICKLINE][BRICKROW];
+extern int nowheart, heartx, hearty, heartvanish;
+extern int stage, colortype, score;
+extern int map[BRICKLINE][BRICKROW], color[BRICKLINE][BRICKROW];

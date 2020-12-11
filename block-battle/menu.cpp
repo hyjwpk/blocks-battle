@@ -1,46 +1,87 @@
 #include "pch.h"
 #include "menu.h"
 
-void menu(void);
-int menukeyboard(void);
-void script(void);
-
-void script(void)
+void menu(void)
 {
-	setbkcolor(BACKROUNDCOLOR);
-	cleardevice();
+	clean();
 
+	mciSendString(L"open .\\resourses\\sound\\background.mp3 alias bkmusic", NULL, 0, NULL);
+	mciSendString(L"play bkmusic repeat", NULL, 0, NULL);
+
+	settextstyle(30, 0, L"新宋体");
 	LOGFONT f;
 	gettextstyle(&f);
-	f.lfHeight = 30;
-	_tcscpy_s(f.lfFaceName, _T("新宋体"));
 	f.lfQuality = ANTIALIASED_QUALITY;
 	settextstyle(&f);
 	settextcolor(WHITE);
 	setbkcolor(LIGHTBLUE);
+	setbkmode(TRANSPARENT);
 
 	RECT r;
-	r = { 350, 165, WIDTH1 - 1, 195 };
-	drawtext(_T("按←向左移动横板"), &r,  DT_VCENTER | DT_SINGLELINE);
-	r = { 350, 200, WIDTH1 - 1, 230 };
-	drawtext(_T("按→向右移动横板"), &r, DT_VCENTER | DT_SINGLELINE);
-	r = { 350, 235, WIDTH1 - 1, 265 };
-	drawtext(_T("按A瞬移横板到最左侧"), &r,  DT_VCENTER | DT_SINGLELINE);
-	r = { 350, 270, WIDTH1 - 1, 300 };
-	drawtext(_T("按D瞬移横板到最右侧"), &r,  DT_VCENTER | DT_SINGLELINE);
-	r = { 350, 305, WIDTH1 - 1, 335 };
-	drawtext(_T("利用弹球碰撞消除砖块取得更高的分数"), &r,  DT_VCENTER | DT_SINGLELINE);
-	r = { 350, 340, WIDTH1 - 1, 370 };
-	drawtext(_T("按任意键返回菜单……"), &r,  DT_VCENTER | DT_SINGLELINE);
+	r = { 0, 165, WIDTH1 - 1, 195 };
+	drawtext(L"(A)游 戏 开 始", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+	r = { 0, 200, WIDTH1 - 1, 230 };
+	drawtext(L"(B)读 取 存 档", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+	r = { 0, 235, WIDTH1 - 1, 265 };
+	drawtext(L"(C)游 戏 说 明", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+	r = { 0, 270, WIDTH1 - 1, 300 };
+	drawtext(L"(D)游 戏 排 行", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+	r = { 0, 305, WIDTH1 - 1, 335 };
+	drawtext(L"(E)游 戏 设 置", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+	r = { 0, 340, WIDTH1 - 1, 370 };
+	drawtext(L"(F)退 出 游 戏", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 
+	gettextstyle(&f);
+	f.lfHeight = 40;
+	_tcscpy_s(f.lfFaceName, L"Consolas");
+	settextstyle(&f);
+	r = { 0, 0, WIDTH1 - 1, 165 };
+	drawtext(L"BLOCKS-BATTLE", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+
+	while (menukeyboard());
+}
+
+void top(void)
+{
+	clean();
+
+	settextstyle(40, 0, L"新宋体");
+	RECT r;
+	r = { 0, 0, WIDTH1 - 1, 165 };
+	drawtext(L"游 戏 排 行", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+
+	settextstyle(60, 30, L"Consolas");
+
+	FILE* highscore;
+	highscore = fopen(".\\resourses\\document\\highscore.txt", "r");
+	int high[4];
+	for (int i = 0;i < 3;i++)
+	{
+		fscanf(highscore, "%d", &high[i]);
+	}
+	fclose(highscore);
+
+	for (int k = 0;k < 3;k++)
+	{
+		wchar_t num[7] = L"1.0000";
+		num[0] = (wchar_t)(k + '1');
+		int tscore = high[k];
+		int i = 5;
+		while (tscore > 0 && i >= 2)
+		{
+			num[i--] = (wchar_t)(tscore % 10 + '0');
+			tscore /= 10;
+		}
+		outtextxy(390, 180 + 40 * k, num);
+	}
 	_getch();
 }
+
 int menukeyboard(void)
 {
 	switch (_getch())
 	{
 	case 'a':case 'A':
-		initial(1);
 		game();
 		break;
 	case 'b':case 'B':
@@ -52,9 +93,11 @@ int menukeyboard(void)
 		menu();
 		break;
 	case 'd':case 'D':
+		top();
+		menu();
 		break;
-	case 'e':case 'E':
-		break;
+	//case 'e':case 'E':
+	//	break;
 	case 'f':case 'F':
 		exit(0);
 		break;
@@ -64,42 +107,17 @@ int menukeyboard(void)
 	}
 	return 0;
 }
-void menu(void)
+
+
+void script(void)
 {
 	setbkcolor(BACKROUNDCOLOR);
-	cleardevice();
-
-	LOGFONT f;
-	gettextstyle(&f);
-	f.lfHeight = 30;
-	_tcscpy_s(f.lfFaceName, _T("新宋体"));
-	f.lfQuality = ANTIALIASED_QUALITY;
-	settextstyle(&f);
-	settextcolor(WHITE);
-	setbkcolor(LIGHTBLUE);
-
-	RECT r;
-	r = { 0, 165, WIDTH1 - 1, 195 };
-	drawtext(_T("(A)游 戏 开 始"), &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
-	r = { 0, 200, WIDTH1 - 1, 230 };
-	drawtext(_T("(B)读 取 存 档"), &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
-	r = { 0, 235, WIDTH1 - 1, 265 };
-	drawtext(_T("(C)游 戏 说 明"), &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
-	r = { 0, 270, WIDTH1 - 1, 300 };
-	drawtext(_T("(D)游 戏 排 行"), &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
-	r = { 0, 305, WIDTH1 - 1, 335 };
-	drawtext(_T("(E)游 戏 设 置"), &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
-	r = { 0, 340, WIDTH1 - 1, 370 };
-	drawtext(_T("(F)退 出 游 戏"), &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
-
-	gettextstyle(&f);
-	f.lfHeight = 40;
-	_tcscpy_s(f.lfFaceName, _T("Consolas"));
-	f.lfQuality = ANTIALIASED_QUALITY;
-	settextstyle(&f);
-	r = { 0, 0, WIDTH1 - 1, 165 };
-	drawtext(_T("BLOCKS-BATTLE"), &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
-	
-	while (menukeyboard());
+	IMAGE img;
+	loadimage(&img, L".\\resourses\\picture\\instructions.jpg", WIDTH1, HIGH);
+	putimage(0, 0, &img);
+	_getch();
 }
+
+
+
 

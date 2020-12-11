@@ -2,13 +2,10 @@
 
 #include "pch.h"
 #include "block-battle.h"
-
-
-
+#pragma comment(lib,"Winmm.lib")
 
 int main(void)
 {
-	stage = 0;
 	initgraph(WIDTH1, HIGH, EW_NOCLOSE);
 	menu();
 	closegraph();

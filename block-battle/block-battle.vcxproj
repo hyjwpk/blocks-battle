@@ -164,7 +164,10 @@
     <ClInclude Include="game.h" />
     <ClInclude Include="define.h" />
     <ClInclude Include="block-battle.h" />
+    <ClInclude Include="graph.h" />
+    <ClInclude Include="initial.h" />
     <ClInclude Include="menu.h" />
+    <ClInclude Include="move.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
