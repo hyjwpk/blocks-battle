@@ -1,2 +1,9 @@
-﻿  menu.cpp
+﻿  pch.cpp
+  block-battle.cpp
+  game.cpp
+  graph.cpp
+  initial.cpp
+  move.cpp
+  menu.cpp
+  正在生成代码...
   block-battle.vcxproj -> C:\Users\wangc\source\repos\block-battle\Debug\block-battle.exe
