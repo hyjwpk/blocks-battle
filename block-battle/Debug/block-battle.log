@@ -1,19 +1,4 @@
-﻿  pch.cpp
-  block-battle.cpp
-  game.cpp
-  graph.cpp
-C:\Users\wangc\source\repos\block-battle\block-battle\graph.cpp(193,21): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\block-battle\block-battle\graph.cpp(193,14): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-  initial.cpp
-C:\Users\wangc\source\repos\block-battle\block-battle\initial.cpp(70,15): warning C4477: “fscanf”: 格式字符串“%f”需要类型“float *”的参数，但可变参数 1 拥有了类型“double *”
-C:\Users\wangc\source\repos\block-battle\block-battle\initial.cpp(70,15): message : 请考虑在格式字符串中使用“%lf”
-C:\Users\wangc\source\repos\block-battle\block-battle\initial.cpp(70,15): warning C4477: “fscanf”: 格式字符串“%f”需要类型“float *”的参数，但可变参数 2 拥有了类型“double *”
-C:\Users\wangc\source\repos\block-battle\block-battle\initial.cpp(70,15): message : 请考虑在格式字符串中使用“%lf”
-C:\Users\wangc\source\repos\block-battle\block-battle\initial.cpp(70,15): warning C4477: “fscanf”: 格式字符串“%f”需要类型“float *”的参数，但可变参数 3 拥有了类型“double *”
-C:\Users\wangc\source\repos\block-battle\block-battle\initial.cpp(70,15): message : 请考虑在格式字符串中使用“%lf”
-C:\Users\wangc\source\repos\block-battle\block-battle\initial.cpp(70,15): warning C4477: “fscanf”: 格式字符串“%f”需要类型“float *”的参数，但可变参数 4 拥有了类型“double *”
-C:\Users\wangc\source\repos\block-battle\block-battle\initial.cpp(70,15): message : 请考虑在格式字符串中使用“%lf”
-  menu.cpp
-  move.cpp
-  正在生成代码...
+﻿  graph.cpp
+C:\Users\wangc\source\repos\block-battle\block-battle\graph.cpp(194,21): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\Users\wangc\source\repos\block-battle\block-battle\graph.cpp(194,14): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
   block-battle.vcxproj -> C:\Users\wangc\source\repos\block-battle\Debug\block-battle.exe

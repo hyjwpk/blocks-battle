@@ -163,9 +163,9 @@ void fail(void)
 	settextstyle(40, 20, L"Consolas");
 	outtextxy(300, 200, L"Wanna try again?");
 
-	mciSendString(L"close cmusic", NULL, 0, NULL);
-	mciSendString(L"open .\\resourses\\sound\\gameover.wav alias cmusic", NULL, 0, NULL);
-	mciSendString(L"play cmusic", NULL, 0, NULL);
+	
+	mciSendString(L"open .\\resourses\\sound\\dead.mp3 alias dmusic", NULL, 0, NULL);
+	mciSendString(L"play dmusic repeat", NULL, 0, NULL);
 
 	settextcolor(GREEN);
 	settextstyle(30, 15, L"Consolas");
@@ -178,6 +178,7 @@ void fail(void)
 	case 'Y':case 'y':
 		stage = 0;
 		score = 0;
+		mciSendString(L"close dmusic", NULL, 0, NULL);
 		break;
 	case 'N':case 'n':
 		exit(0);
