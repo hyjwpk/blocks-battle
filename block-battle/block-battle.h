@@ -1,5 +1,6 @@
 #include "pch.h"
-int ballx, bally, x_move, y_move, radius, ballcolor;
+double ballx, bally, x_move, y_move;
+int radius, ballcolor;
 int boardx, boardy, boardhigh, boardwidth, boardleft, boardright, boardtop, boardbottom;
 int brickhigh, brickwidth, bricknumber;
 int nowheart, heartx, hearty, heartvanish;

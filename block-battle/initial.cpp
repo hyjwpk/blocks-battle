@@ -67,7 +67,7 @@ int readsave(void)
 	fscanf(save, "%d", &score);
 	fscanf(save, "%d", &nowheart);
 	fscanf(save, "%d", &t_save);
-	fscanf(save, "%d %d %d %d", &ballx, &bally, &x_move, &y_move);
+	fscanf(save, "%f %f %f %f", &ballx, &bally, &x_move, &y_move);
 
 	fclose(save);
 	return 1;
@@ -77,7 +77,7 @@ void initial(int type)//1为读取关卡,2为读取存档
 {
 
 	boardhigh		= HIGH / 20;
-	boardwidth		= WIDTH2 / 2;
+	boardwidth		= WIDTH2 / 3;
 	boardx			= WIDTH2 / 2;
 	boardy			= HIGH - boardhigh / 2;
 	boardleft		= boardx - boardwidth / 2;
@@ -85,7 +85,7 @@ void initial(int type)//1为读取关卡,2为读取存档
 	boardtop		= boardy - boardhigh / 2;
 	boardbottom		= boardy + boardhigh / 2;
 
-	x_move = y_move = SPEED;
+	y_move = 2;
 	radius = 10;
 	ballx = WIDTH2 / 2;
 	bally = boardtop-radius;

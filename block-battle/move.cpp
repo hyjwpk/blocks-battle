@@ -63,7 +63,7 @@ void save(void)
 	fputs("\n", save);
 	fprintf(save, "%d", ((clock() - t) / CLOCKS_PER_SEC+t_save));
 	fputs("\n", save);
-	fprintf(save, "%d %d %d %d", ballx, bally, x_move, y_move );
+	fprintf(save, "%f %f %f %f", ballx, bally, x_move, y_move );
 	fclose(save);
 
 	sortscore();
@@ -72,14 +72,16 @@ void save(void)
 void crash(void)
 {
 	float H, S, L; 		// 色相 饱和度 亮度
-	if ((bally - radius) <= boardbottom && (bally + radius + y_move) >= boardtop && ballx >= boardleft && ballx <= boardright)
-	{
-		y_move = -abs(y_move);
-	}
 	if (((ballx - radius + x_move) <= 0) || ((ballx + radius + x_move) >= WIDTH2))
 		x_move = -x_move;
 	if (((bally - radius + y_move) <= 0))
 		y_move = -y_move;
+
+	if ((bally - radius) <= boardbottom && (bally + radius + y_move) >= boardtop && ballx >= boardleft && ballx <= boardright)
+	{
+		y_move = -fabs(y_move);
+		x_move = (ballx - boardx) / boardwidth * SPEED;
+	}
 
 	if ((bally + radius + y_move) >= HIGH)
 	{
