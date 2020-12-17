@@ -108,7 +108,6 @@ int menukeyboard(void)
 	return 0;
 }
 
-
 void script(void)
 {
 	setbkcolor(BACKROUNDCOLOR);

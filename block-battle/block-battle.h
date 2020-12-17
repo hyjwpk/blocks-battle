@@ -5,4 +5,5 @@ int brickhigh, brickwidth, bricknumber;
 int nowheart, heartx, hearty, heartvanish;
 int stage, colortype,score;
 int map[BRICKLINE][BRICKROW], color[BRICKLINE][BRICKROW];
+clock_t t, t_save;
 extern void menu(void);

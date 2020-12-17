@@ -19,13 +19,18 @@ void heart(int x0, int y0, int size)
 
 void stagetitle(int n)//nŒ™πÿø® ˝
 {
-	wchar_t cmdstring[50] = L".\\resourses\\picture\\stage0.jpg";
-	cmdstring[25] = '0' + n;
+	wchar_t cmdstring[50] = L".\\resourses\\picture\\stage.png";
+	//cmdstring[25] = '0' + n;
 	IMAGE img;
 	loadimage(&img, cmdstring, 500, 200);
 	putimage(250, 150, &img);
+	wchar_t s[] = L"   ";
+	s[1] = '0' + n;
+	settextcolor(BGR(0XFFE597));
+	settextstyle(110, 0, L"Consolas");
+	outtextxy(525, 190, s);
 	FlushBatchDraw();
-	Sleep(500);
+	Sleep(1000);
 }
 
 void printheart(void)
@@ -81,6 +86,55 @@ void printscore(void)
 	outtextxy(930, 100, num[3]);
 }
 
+void printtime(void)
+{
+	int time;
+	if (t == 0) time = t_save;
+	else
+		time = (clock() - t) / CLOCKS_PER_SEC+t_save;
+	settextcolor(GREEN);
+	settextstyle(40, 20, L"Consolas");
+	outtextxy(640, 200, L"TIME:");
+
+	wchar_t num[6] = L"00000";
+	int i = 4;
+	while (time > 0 && i >= 0)
+	{
+		num[i--] = (wchar_t)(time % 10 + '0');
+		time /= 10;
+	}
+	outtextxy(800, 200, num);
+}
+
+void timelimit(void)
+{
+	int time;
+	if (t == 0) time = 100;
+	else
+		time = 100 - (clock() - t) / CLOCKS_PER_SEC;
+
+	settextcolor(GREEN);
+	settextstyle(40, 20, L"Consolas");
+	outtextxy(700, 200, L"TIME:");
+
+	wchar_t num[6] = L"00000";
+	int i = 4;
+	while (time > 0 && i >= 0)
+	{
+		num[i--] = (wchar_t)(time % 10 + '0');
+		time /= 10;
+	}
+	outtextxy(800, 200, num);
+	settextcolor(GREEN);
+	settextstyle(40, 0, L"Œ¢»Ì—≈∫⁄");
+	outtextxy(900, 200, L"√Î");
+	if (time == 0)
+	{
+		nowheart--;
+		time = 100;
+	}
+}
+
 void rainbow(int type,float *H,float *S,float *L)
 {
 	if (type == 0)
@@ -109,11 +163,16 @@ void fail(void)
 	settextstyle(40, 20, L"Consolas");
 	outtextxy(300, 200, L"Wanna try again?");
 
+	mciSendString(L"close cmusic", NULL, 0, NULL);
+	mciSendString(L"open .\\resourses\\sound\\gameover.wav alias cmusic", NULL, 0, NULL);
+	mciSendString(L"play cmusic", NULL, 0, NULL);
+
 	settextcolor(GREEN);
 	settextstyle(30, 15, L"Consolas");
 	outtextxy(350, 300, L"(Y)YES   (N)NO");
 
 	FlushBatchDraw();
+
 	switch (_getch())
 	{
 	case 'Y':case 'y':
@@ -154,6 +213,8 @@ void print(void)
 	printheart();
 
 	printscore();
+
+	printtime();
 	
 	FlushBatchDraw();
 }

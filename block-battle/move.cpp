@@ -12,6 +12,28 @@ void ballmove(void)
 	bally = bally + y_move;
 }
 
+void sortscore(void)
+{
+	FILE* highscore;
+
+	highscore = fopen(".\\resourses\\document\\highscore.txt", "r");
+	int high[4];
+	for (int i = 0;i < 3;i++)
+	{
+		fscanf(highscore, "%d", &high[i]);
+	}
+	high[3] = score;
+	qsort(high, 4, sizeof(high[0]), compare);
+	fclose(highscore);
+
+	highscore = fopen(".\\resourses\\document\\highscore.txt", "w");
+	for (int i = 0;i < 3;i++)
+	{
+		fprintf(highscore, "%d ", high[i]);
+	}
+	fclose(highscore);
+}
+
 void save(void)
 {
 	FILE* save;
@@ -38,26 +60,13 @@ void save(void)
 	fprintf(save, "%d", score);
 	fputs("\n", save);
 	fprintf(save, "%d", nowheart);
+	fputs("\n", save);
+	fprintf(save, "%d", ((clock() - t) / CLOCKS_PER_SEC+t_save));
+	fputs("\n", save);
+	fprintf(save, "%d %d %d %d", ballx, bally, x_move, y_move );
 	fclose(save);
 
-	FILE* highscore;
-
-	highscore = fopen(".\\resourses\\document\\highscore.txt", "r");
-	int high[4];
-	for (int i = 0;i < 3;i++)
-	{
-		fscanf(highscore, "%d", &high[i]);
-	}
-	high[3] = score;
-	qsort(high, 4, sizeof(high[0]), compare);
-	fclose(highscore);
-
-	highscore = fopen(".\\resourses\\document\\highscore.txt", "w");
-	for (int i = 0;i < 3;i++)
-	{
-		fprintf(highscore, "%d ", high[i]);
-	}
-	fclose(highscore);
+	sortscore();
 }
 
 void crash(void)
@@ -79,6 +88,11 @@ void crash(void)
 		bally = boardtop - radius;
 	}
 
+	if (bally >boardtop && bally< boardbottom && ballx >= boardleft && ballx <= boardright)
+	{
+		bally = boardtop - radius;
+	}
+
 	rainbow(0, &H, &S, &L);
 	for (int k = 0; k < BRICKLINE; k++)
 		for (int i = 0; i < BRICKROW; i++)
@@ -90,6 +104,9 @@ void crash(void)
 				{
 					if (colortype == 0) ballcolor = BGR(color[k][i]);
 					if (colortype == 1) ballcolor = HSLtoRGB(H, S, L);
+					mciSendString(L"close cmusic", NULL, 0, NULL);
+					mciSendString(L"open .\\resourses\\sound\\crash.wav alias cmusic", NULL, 0, NULL);
+					mciSendString(L"play cmusic", NULL, 0, NULL);
 					map[k][i] = 0;
 					bricknumber--;
 					y_move = -y_move;
@@ -99,6 +116,9 @@ void crash(void)
 				{
 					if (colortype == 0) ballcolor = BGR(color[k][i]);
 					if (colortype == 1) ballcolor = HSLtoRGB(H, S, L);
+					mciSendString(L"close cmusic", NULL, 0, NULL);
+					mciSendString(L"open .\\resourses\\sound\\crash.wav alias cmusic", NULL, 0, NULL);
+					mciSendString(L"play cmusic", NULL, 0, NULL);
 					map[k][i] = 0;
 					bricknumber--;
 					x_move = -x_move;
@@ -106,7 +126,9 @@ void crash(void)
 				}
 			}
 		}
+
 }
+
 void boardmove(void)
 {
 	if (_kbhit())

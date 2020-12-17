@@ -66,6 +66,8 @@ int readsave(void)
 
 	fscanf(save, "%d", &score);
 	fscanf(save, "%d", &nowheart);
+	fscanf(save, "%d", &t_save);
+	fscanf(save, "%d %d %d %d", &ballx, &bally, &x_move, &y_move);
 
 	fclose(save);
 	return 1;
@@ -93,14 +95,18 @@ void initial(int type)//1为读取关卡,2为读取存档
 	brickhigh	= brickwidth / 2;
 
 	nowheart = 3;
+	t = 0;
 	switch(type)
 	{
 	case 1:
+		t_save = 0;
 		if (readstage(++stage) == 0)
 		{
+			sortscore();
 			clean();
 			stage = 0;
 			score = 0;
+			t = 0;
 			EndBatchDraw();
 			settextstyle(100, 0, L"Consolas");
 			RECT r;
@@ -112,6 +118,7 @@ void initial(int type)//1为读取关卡,2为读取存档
 		break;
 	case 2:
 		if (readsave() == 0) exit(0);
+		t = clock();
 		break;
 	}
 

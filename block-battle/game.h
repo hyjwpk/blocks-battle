@@ -6,3 +6,4 @@ extern void print(void);
 extern void initial(int type);
 extern void stagetitle(int n);
 extern void fail(void);
+extern void sortscore();

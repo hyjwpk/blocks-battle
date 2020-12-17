@@ -1,9 +1,3 @@
-﻿  pch.cpp
-  block-battle.cpp
-  game.cpp
-  graph.cpp
-  initial.cpp
-  move.cpp
-  menu.cpp
-  正在生成代码...
+﻿  initial.cpp
+  LINK : 没有找到 C:\Users\wangc\source\repos\block-battle\Debug\block-battle.exe 或上一个增量链接没有生成它；正在执行完全链接
   block-battle.vcxproj -> C:\Users\wangc\source\repos\block-battle\Debug\block-battle.exe

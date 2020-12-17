@@ -17,3 +17,4 @@ extern int brickhigh, brickwidth, bricknumber;
 extern int nowheart, heartx, hearty, heartvanish;
 extern int stage, colortype, score;
 extern int map[BRICKLINE][BRICKROW], color[BRICKLINE][BRICKROW];
+extern clock_t t, t_save;

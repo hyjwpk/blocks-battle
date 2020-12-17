@@ -15,6 +15,7 @@ void game(void)
 			clean();
 			print();
 			_getch();
+			t = clock();
 		}
 		clean();
 		boardmove();
@@ -24,6 +25,7 @@ void game(void)
 		Sleep(1);
 		if (nowheart == 0)
 		{
+			sortscore();
 			fail();
 		}
 	}
