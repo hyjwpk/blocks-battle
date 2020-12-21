@@ -1,0 +1,15 @@
+﻿  button.cpp
+  graph.cpp
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\graph.cpp(147,11): warning C4305: “=”: 从“double”到“float”截断
+  menu.cpp
+  music.cpp
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\music.cpp(39,56): warning C4474: sprintf: 格式字符串中传递的参数太多
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\music.cpp(39,56): message : 占位符和其参数预计 1 可变参数，但提供的却是 2 参数
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\music.cpp(46,49): warning C4474: sprintf: 格式字符串中传递的参数太多
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\music.cpp(46,49): message : 占位符和其参数预计 1 可变参数，但提供的却是 2 参数
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\music.cpp(53,49): warning C4474: sprintf: 格式字符串中传递的参数太多
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\music.cpp(53,49): message : 占位符和其参数预计 1 可变参数，但提供的却是 2 参数
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\music.cpp(60,50): warning C4474: sprintf: 格式字符串中传递的参数太多
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\music.cpp(60,50): message : 占位符和其参数预计 1 可变参数，但提供的却是 2 参数
+  正在生成代码...
+  blocks-battle.vcxproj -> C:\Users\wangc\source\repos\blocks-battle\Debug\blocks-battle.exe

@@ -1,0 +1,19 @@
+0 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 1 1 1 1 0 0 0 
+0 0 1 1 1 1 1 1 1 0 0 
+0 1 1 1 1 1 1 1 1 1 0 
+0 1 1 1 1 1 1 1 1 1 0 
+0 1 1 1 1 1 1 1 1 1 0 
+0 1 0 1 0 1 0 0 0 1 0 
+0 0 0 0 0 1 0 0 0 0 0 
+0 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 0 1 0 0 0 0 0 
+0 0 0 1 1 0 0 0 0 0 0 
+0 0 0 0 1 0 0 0 0 0 0 
+1
+0
+ffffff ffffff ffffff ffffff ffffff 45418b ffffff ffffff ffffff ffffff ffffff ffffff ffffff ffffff ffd388 ffd388 c8eae1 2277e1 2277e1 ffffff ffffff ffffff ffffff ffffff ffd388 ffd388 ffffbf c8eae1 b8d0f2 2277e1 2277e1 ffffff ffffff ffffff ffd388 ffd388 ffffbf ffffbf c8eae1 b8d0f2 b8d0f2 2277e1 2277e1 ffffff ffffff ffd388 ffd388 ffffbf ffffbf c8eae1 b8d0f2 b8d0f2 2277e1 2277e1 ffffff ffffff ffd388 ffd388 ffffbf ffffbf c8eae1 b8d0f2 b8d0f2 2277e1 2277e1 ffffff ffffff 45418b ffffff 45418b ffffff 45418b ffffff 45418b ffffff 45418b ffffff ffffff ffffff ffffff ffffff ffffff 45418b ffffff ffffff ffffff ffffff ffffff ffffff ffffff ffffff ffffff ffffff 45418b ffffff ffffff ffffff ffffff ffffff ffffff ffffff ffffff b8d0f2 ffffff b8d0f2 ffffff ffffff ffffff ffffff ffffff ffffff ffffff ffffff b8d0f2 b8d0f2 b8d0f2 ffffff ffffff ffffff ffffff ffffff ffffff ffffff ffffff ffffff b8d0f2 ffffff ffffff ffffff ffffff ffffff ffffff 
+2
+3
+6
+611.131630 309.000000 0.965853 -2.000000

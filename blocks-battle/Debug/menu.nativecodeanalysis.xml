@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\wangc\source\repos\blocks-battle\blocks-battle\</FILEPATH>
+      <FILENAME>menu.cpp</FILENAME>
+      <LINE>58</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>返回值被忽略: “fscanf”。</DESCRIPTION>
+    <FUNCTION>top</FUNCTION>
+    <DECORATED>?top@@YAXXZ</DECORATED>
+    <FUNCLINE>42</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\wangc\source\repos\blocks-battle\blocks-battle\</FILEPATH>
+      <FILENAME>menu.cpp</FILENAME>
+      <LINE>75</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>返回值被忽略: “_getch”。</DESCRIPTION>
+    <FUNCTION>top</FUNCTION>
+    <DECORATED>?top@@YAXXZ</DECORATED>
+    <FUNCLINE>42</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\wangc\source\repos\blocks-battle\blocks-battle\</FILEPATH>
+      <FILENAME>menu.cpp</FILENAME>
+      <LINE>83</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>返回值被忽略: “_getch”。</DESCRIPTION>
+    <FUNCTION>script</FUNCTION>
+    <DECORATED>?script@@YAXXZ</DECORATED>
+    <FUNCLINE>78</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

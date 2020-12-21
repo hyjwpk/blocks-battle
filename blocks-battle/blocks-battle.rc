@@ -1,0 +1,126 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// JPG
+//
+
+IDR_JPG1                JPG                     "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\picture\\background.jpg"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG1                PNG                     "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\picture\\heart.png"
+
+IDB_PNG2                PNG                     "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\picture\\heart2.png"
+
+IDB_PNG3                PNG                     "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\picture\\instructions.jpg"
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+IDR_TEXT1               TEXT                    "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\document\\stage1.txt"
+
+IDR_TEXT2               TEXT                    "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\document\\stage2.txt"
+
+IDR_TEXT3               TEXT                    "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\document\\stage3.txt"
+
+IDR_TEXT4               TEXT                    "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\document\\stage4.txt"
+
+IDR_TEXT5               TEXT                    "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\document\\stage5.txt"
+
+IDR_TEXT6               TEXT                    "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\document\\stage6.txt"
+
+IDR_TEXT7               TEXT                    "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\document\\stage7.txt"
+
+IDR_TEXT8               TEXT                    "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\document\\stage8.txt"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// MP3
+//
+
+IDR_MP31                MP3                     "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\sound\\background.mp3"
+
+IDR_MP32                MP3                     "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\sound\\crash.mp3"
+
+IDR_MP33                MP3                     "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\sound\\dead.mp3"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\picture\\球.ico"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
