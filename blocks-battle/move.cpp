@@ -86,7 +86,7 @@ void crash(void)
 	if ((bally - radius) <= boardbottom && (bally + radius + y_move) >= boardtop && ballx >= boardleft && ballx <= boardright)
 	{
 		y_move = -fabs(y_move);
-		x_move = (ballx - boardx) / boardwidth * SPEED;
+		x_move = (ballx - boardx) / boardwidth * speed;
 	}
 
 	if ((bally + radius + y_move) >= HIGH)
@@ -112,8 +112,11 @@ void crash(void)
 				{
 					if (colortype == 0) ballcolor = BGR(color[k][i]);
 					if (colortype == 1) ballcolor = HSLtoRGB(H, S, L);
-					mu_crash.stopmusic();
-					mu_crash.playonce();
+					if (soundmode == 0)
+					{
+						mu_crash.stopmusic();
+						mu_crash.playonce();
+					}
 					map[k][i] = 0;
 					bricknumber--;
 					y_move = -y_move;
@@ -124,13 +127,22 @@ void crash(void)
 						hearty = bally;
 						heartx = ballx;
 					}
+					if (flashvanish == 0 && (rand() % 100) > 90)
+					{
+						flashvanish = 1;
+						flashy = bally;
+						flashx = ballx;
+					}
 				}
 				else if ((bally>= k * brickhigh ) && (bally <= k * brickhigh + brickhigh) && (ballx+x_move >= i * brickwidth) && (ballx + x_move <= (i+1) * brickwidth))
 				{
 					if (colortype == 0) ballcolor = BGR(color[k][i]);
 					if (colortype == 1) ballcolor = HSLtoRGB(H, S, L);
-					mu_crash.stopmusic();
-					mu_crash.playonce();
+					if (soundmode == 0)
+					{
+						mu_crash.stopmusic();
+						mu_crash.playonce();
+					}
 					map[k][i] = 0;
 					bricknumber--;
 					x_move = -x_move;
@@ -140,6 +152,12 @@ void crash(void)
 						heartvanish = 1;
 						hearty = bally;
 						heartx = ballx;
+					}
+					if (flashvanish == 0 && (rand() % 100) > 90)
+					{
+						flashvanish = 1;
+						flashy = bally;
+						flashx = ballx;
 					}
 				}
 			}
@@ -163,6 +181,33 @@ void boardmove(void)
 			boardx		= WIDTH2 - boardwidth / 2;
 			boardleft	= boardx - boardwidth / 2;
 			boardright	= boardx + boardwidth / 2;
+			break;
+		case'W':case'w':
+			_getch();
+			break;
+		case'Z':case'z':
+			if (boardleft - 100 > 0)
+			{
+				boardx = boardx - 100;
+			}
+			else
+			{
+				boardx = boardwidth / 2;
+			}
+			boardleft = boardx - boardwidth / 2;
+			boardright = boardx + boardwidth / 2;
+			break;
+		case'C':case'c':
+			if (boardright + 100 < WIDTH2)
+			{
+				boardx = boardx + 100;
+			}
+			else
+			{
+				boardx = WIDTH2 - boardwidth / 2;
+			}
+			boardleft = boardx - boardwidth / 2;
+			boardright = boardx + boardwidth / 2;
 			break;
 		case 27:
 			save();
@@ -215,9 +260,13 @@ void boardmove(void)
 					if (boardbottom + 15 <= HIGH)
 					{
 						boardy = boardy + 15;  // Î»ÖÃÏÂÒÆ
-						boardtop = boardy - boardhigh / 2;
-						boardbottom = boardy + boardhigh / 2;
 					}
+					else
+					{
+						boardy = HIGH - boardhigh / 2;
+					}
+					boardtop = boardy - boardhigh / 2;
+					boardbottom = boardy + boardhigh / 2;
 					break;
 				}
 		}

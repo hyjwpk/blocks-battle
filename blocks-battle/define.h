@@ -11,7 +11,6 @@
 #define BACKROUNDCOLOR WHITE
 #define BOARDCOLOR LIGHTBLUE
 
-#define SPEED 5
 
 extern double ballx, bally, x_move, y_move;
 extern int radius, ballcolor;
@@ -22,3 +21,5 @@ extern int stage, colortype, score;
 extern int map[BRICKLINE][BRICKROW], color[BRICKLINE][BRICKROW];
 extern clock_t t, t_save;
 extern Music mu_background,mu_crash, mu_dead;
+extern int tough, soundmode, timesetting, speed;
+extern int flashx, flashy, flashvanish;

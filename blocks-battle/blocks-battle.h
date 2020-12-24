@@ -15,6 +15,11 @@ int nowheart, heartx, hearty, heartvanish;
 int stage, colortype, score;
 int map[BRICKLINE][BRICKROW], color[BRICKLINE][BRICKROW];
 clock_t t, t_save;
+//settings
+int tough,soundmode,timesetting,speed;
+//flash
+int flashx, flashy, flashvanish;
+
 
 Music mu_background(IDR_MP31, "background");
 Music mu_crash(IDR_MP32, "crash");

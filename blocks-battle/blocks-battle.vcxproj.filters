@@ -96,9 +96,6 @@
     <Image Include="..\Debug\resourses\picture\heart2.png">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="..\Debug\resourses\picture\instructions.jpg">
-      <Filter>资源文件</Filter>
-    </Image>
     <Image Include="..\Debug\resourses\picture\stage.png">
       <Filter>资源文件</Filter>
     </Image>
@@ -109,6 +106,12 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="..\Debug\resourses\picture\stage2.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\Debug\resourses\picture\tflash.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\Debug\resourses\picture\tflash1.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

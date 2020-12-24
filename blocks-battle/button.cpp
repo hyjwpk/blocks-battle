@@ -56,7 +56,8 @@ void Button::Mouse()
 		if (cmd.msg.uMsg == WM_LBUTTONUP) 
 		{
 			cmd.msg.uMsg = 0;
-			press = true;	
+			press = true;
+			TurnBig();
 		}
 	}
 	else 
@@ -117,4 +118,9 @@ void Button::TurnBig()
 	btnxr += 5;
 	btnyr += 2;
 	turnlittle = false;
+}
+
+void Button::ChangeButtonText(const char* text)
+{
+	this->text=text;
 }

@@ -185,9 +185,10 @@
     <Image Include="..\Debug\resourses\picture\background.jpg" />
     <Image Include="..\Debug\resourses\picture\heart.png" />
     <Image Include="..\Debug\resourses\picture\heart2.png" />
-    <Image Include="..\Debug\resourses\picture\instructions.jpg" />
     <Image Include="..\Debug\resourses\picture\stage.png" />
     <Image Include="..\Debug\resourses\picture\stage2.png" />
+    <Image Include="..\Debug\resourses\picture\tflash.png" />
+    <Image Include="..\Debug\resourses\picture\tflash1.png" />
     <Image Include="..\Debug\resourses\picture\球.ico" />
   </ItemGroup>
   <ItemGroup>

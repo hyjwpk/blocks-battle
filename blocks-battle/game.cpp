@@ -4,9 +4,6 @@ void game(void)
 {
 
 
-
-	mu_background.playmusic();
-
 	while (1)
 	{
 		if (bricknumber == 0||stage==0)

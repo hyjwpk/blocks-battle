@@ -149,7 +149,27 @@ void initial(int type)//1为读取关卡,2为读取存档
 {
 
 	boardhigh		= HIGH / 25;
-	boardwidth		= WIDTH2 / 4;
+
+	if (tough == 0)
+	{
+		boardwidth = WIDTH2 / 3;
+		y_move = 2;
+		speed = 10;
+	}
+	else if (tough == 1)
+	{
+		boardwidth = WIDTH2 / 4;
+		y_move = 3;
+		speed = 15;
+	}
+	else if (tough == 2)
+	{
+		boardwidth = WIDTH2 / 5;
+		y_move = 4;
+		speed = 20;
+	}
+
+
 	boardx			= WIDTH2 / 2;
 	boardy			= HIGH - boardhigh / 2;
 	boardleft		= boardx - boardwidth / 2;
@@ -157,7 +177,6 @@ void initial(int type)//1为读取关卡,2为读取存档
 	boardtop		= boardy - boardhigh / 2;
 	boardbottom		= boardy + boardhigh / 2;
 
-	y_move = 2;
 	radius = 10;
 	ballx = WIDTH2 / 2;
 	bally = (double)boardtop-radius;

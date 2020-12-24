@@ -17,6 +17,15 @@ void heart(int x0, int y0, int size)
 	putimage(x0, y0, &picture, SRCPAINT);
 }
 
+void flash(int x0, int y0, int size)
+{
+	IMAGE mask, picture;
+	loadimage(&mask, "PNG", MAKEINTRESOURCE(IDB_PNG4), size, size);
+	loadimage(&picture, "PNG", MAKEINTRESOURCE(IDB_PNG3), size, size);
+	putimage(x0, y0, &mask, SRCAND);
+	putimage(x0, y0, &picture, SRCPAINT);
+}
+
 void stagetitle(int n)//n为关卡数
 {
 	char s[] = "STAGE  ";
@@ -59,6 +68,23 @@ void printheart(void)
 	}
 }
 
+void printflash(void)
+{
+	if (flashvanish == 1)
+	{
+		flash(flashx, ++flashy, 25);
+	}
+
+	if (flashy > HIGH) flashvanish = 0;
+
+	if ((flashy - radius) <= boardbottom && (flashy + radius) >= boardtop && flashx >= boardleft && flashx <= boardright && flashvanish == 1)
+	{
+		flashvanish = 0;
+		speed++;
+	}
+
+}
+
 void printscore(void)
 {
 	
@@ -91,9 +117,9 @@ void printtime(void)
 	
 	settextstyle(60, 30, "Consolas");
 	settextcolor(BLACK);
-	outtextxy(663, 203, "TIMES:");
+	outtextxy(663, 203, "TIME：");
 	settextcolor(WHITE);
-	outtextxy(660, 200, "TIMES:");
+	outtextxy(660, 200, "TIME：");
 
 	char num[5] = "0000";
 	int i = 3;
@@ -108,36 +134,39 @@ void printtime(void)
 	outtextxy(840, 200, num);
 }
 
-//void timelimit(void)
-//{
-//	int time;
-//	if (t == 0) time = 100;
-//	else
-//		time = 100 - (clock() - t) / CLOCKS_PER_SEC;
-//
-//	settextstyle(40, 20, "Consolas");
-//	settextcolor(BLACK);
-//	outtextxy(703, 203, "TIME:");
-//	settextcolor(WHITE);
-//	outtextxy(700, 200, "TIME:");
-//
-//	char num[6] = "00000";
-//	int i = 4;
-//	while (time > 0 && i >= 0)
-//	{
-//		num[i--] = (time % 10 + '0');
-//		time /= 10;
-//	}
-//	outtextxy(800, 200, num);
-//	settextcolor(GREEN);
-//	settextstyle(40, 0, "微软雅黑");
-//	outtextxy(900, 200, "秒");
-//	if (time == 0)
-//	{
-//		nowheart--;
-//		time = 100;
-//	}
-//}
+void timelimit(int n)
+{
+	int time;
+	if (t == 0) time = n-t_save;
+	else
+		time = n-((clock() - t) / CLOCKS_PER_SEC + t_save);
+
+
+	if (time <= 0)
+	{
+		t = clock();
+		nowheart--;
+	}
+
+	settextstyle(60, 30, "Consolas");
+	settextcolor(BLACK);
+	outtextxy(663, 203, "TIME：");
+	settextcolor(WHITE);
+	outtextxy(660, 200, "TIME：");
+
+	char num[5] = "0000";
+	int i = 3;
+	while (time > 0 && i >= 0)
+	{
+		num[i--] = (time % 10 + '0');
+		time /= 10;
+	}
+	settextcolor(BLACK);
+	outtextxy(843, 203, num);
+	settextcolor(YELLOW);
+	outtextxy(840, 200, num);
+}
+
 
 void rainbow(int type,float *H,float *S,float *L)
 {
@@ -158,9 +187,12 @@ void fail(void)
 {
 	
 	clean();
+	if (soundmode == 0)
+	{
+		mu_background.stopmusic();
+		mu_dead.playonce();
+	}
 
-	mu_background.stopmusic();
-	mu_dead.playonce();
 
 	Button btn_restart(320, 380, 120, 30, "重试");
 	Button btn_fail(520, 380, 120, 30, "退出");
@@ -181,8 +213,8 @@ void fail(void)
 		{
 			stage = 0;
 			score = 0;
-			mu_background.playmusic();
 			EndBatchDraw();
+			mu_dead.stopmusic();
 			menu();
 			break;
 		}
@@ -224,10 +256,16 @@ void print(void)
 	}
 
 	printheart();
-
+	printflash();
 	printscore();
 
-	printtime();
+	if (timesetting == 1)
+		timelimit(50);
+	if (timesetting == 2)
+		timelimit(500);
+	else if (timesetting == 0)
+		printtime();
+
 	
 	FlushBatchDraw();
 }

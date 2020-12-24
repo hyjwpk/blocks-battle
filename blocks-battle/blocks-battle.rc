@@ -62,8 +62,9 @@ IDB_PNG1                PNG                     "C:\\Users\\wangc\\source\\repos
 
 IDB_PNG2                PNG                     "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\picture\\heart2.png"
 
-IDB_PNG3                PNG                     "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\picture\\instructions.jpg"
+IDB_PNG3                PNG                     "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\picture\\tflash.png"
 
+IDB_PNG4                PNG                     "C:\\Users\\wangc\\source\\repos\\blocks-battle\\Debug\\resourses\\picture\\tflash1.png"
 
 
 /////////////////////////////////////////////////////////////////////////////

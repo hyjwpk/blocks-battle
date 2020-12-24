@@ -7,6 +7,7 @@ public:
 	~Button();
 	bool press;	
 	void Show();
+	void ChangeButtonText(const char* text);
 private:
 	COLORREF button_color;
 	int color_gap;
@@ -26,6 +27,7 @@ private:
 	void TurnLittle();
 	void TurnBig();
 	void ChangeButtonColor(bool flag);
+	
 };
 
 extern Mouse cmd;
