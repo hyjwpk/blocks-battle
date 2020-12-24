@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "move.h"
 
+int lowest;
+
 int compare(const void* p1, const void* p2)
 {
 	return *(int*)p2 - *(int*)p1;
@@ -107,6 +109,7 @@ void crash(void)
 		{
 			if (map[k][i])
 			{
+				lowest = k;
 				if (colortype == 1) rainbow(1, &H, &S, &L);
 				if (((bally + y_move + radius) >= k * brickhigh + radius) && ((bally + y_move - radius) <= (k + 1) * brickhigh) && (ballx >= i * brickwidth) && (ballx <= (i + 1) * brickwidth))
 				{
@@ -221,13 +224,13 @@ void boardmove(void)
 				switch (_getch())
 				{
 				case 72: // Î»ÖÃÉÏÒÆ
-					if (boardtop - 15 > 349)
+					if (boardtop - 15 > (lowest+1)*brickhigh)
 					{
 						boardy = boardy - 15;
 					}
 					else
 					{
-						boardy = 349 + boardhigh / 2;
+						boardy = (lowest + 1) * brickhigh + boardhigh / 2;
 					}
 					boardtop = boardy - boardhigh / 2;
 					boardbottom = boardy + boardhigh / 2;

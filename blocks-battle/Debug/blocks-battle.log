@@ -1,12 +1,10 @@
-﻿  menu.cpp
-  move.cpp
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(127,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(128,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(133,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(134,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(153,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(154,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(159,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(160,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-  正在生成代码...
+﻿  move.cpp
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(130,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(131,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(136,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(137,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(156,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(157,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(162,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(163,16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
   blocks-battle.vcxproj -> C:\Users\wangc\source\repos\blocks-battle\Debug\blocks-battle.exe
