@@ -123,8 +123,8 @@ void crash(void)
 					map[k][i] = 0;
 					bricknumber--;
 					y_move = -y_move;
-					score++;
-					if (heartvanish == 0 && (rand() % 100) > 90)
+					score+=speed/5;
+					if (heartvanish == 0 && (rand() % 100) > 90-timesetting*5)
 					{
 						heartvanish = 1;
 						hearty = bally;
@@ -149,8 +149,8 @@ void crash(void)
 					map[k][i] = 0;
 					bricknumber--;
 					x_move = -x_move;
-					score++;
-					if (heartvanish == 0 && (rand() % 100) > 90)
+					score += speed / 5;
+					if (heartvanish == 0 && (rand() % 100) > 90 - timesetting * 5)
 					{
 						heartvanish = 1;
 						hearty = bally;
@@ -274,4 +274,55 @@ void boardmove(void)
 				}
 		}
 	}
+}
+
+void mousemove(void)
+{
+	boardx = cmd.msg.x;
+	boardy = cmd.msg.y;
+	boardleft = boardx - boardwidth / 2;
+	boardright = boardx + boardwidth / 2;
+	boardtop = boardy - boardhigh / 2;
+	boardbottom = boardy + boardhigh / 2;
+	if (boardtop< (lowest + 1) * brickhigh)
+	{
+		boardy = (lowest + 1) * brickhigh + boardhigh / 2;
+		boardtop = boardy - boardhigh / 2;
+		boardbottom = boardy + boardhigh / 2;
+	}
+	if (boardbottom > HIGH)
+	{
+		boardy = HIGH - boardhigh / 2;
+		boardtop = boardy - boardhigh / 2;
+		boardbottom = boardy + boardhigh / 2;
+	}
+	if (boardleft< 0)
+	{
+		boardx = boardwidth / 2;
+		boardleft = boardx - boardwidth / 2;
+		boardright = boardx + boardwidth / 2;
+	}
+	if (boardright > WIDTH2)
+	{
+		boardx = WIDTH2 - boardwidth / 2;
+		boardleft = boardx - boardwidth / 2;
+		boardright = boardx + boardwidth / 2;
+	}
+	if (_kbhit())
+		switch (_getch())
+		{
+		case'W':case'w':
+			_getch();
+			break;
+		case 27:
+			save();
+			stage = 0;
+			score = 0;
+			EndBatchDraw();
+			menu();
+			break;
+		default :
+			break;
+		}
+
 }

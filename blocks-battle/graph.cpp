@@ -260,9 +260,9 @@ void print(void)
 	printscore();
 
 	if (timesetting == 1)
-		timelimit(50);
-	if (timesetting == 2)
 		timelimit(500);
+	if (timesetting == 2)
+		timelimit(50);
 	else if (timesetting == 0)
 		printtime();
 

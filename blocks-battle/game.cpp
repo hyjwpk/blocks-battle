@@ -13,11 +13,15 @@ void game(void)
 			stagetitle(stage);
 			clean();
 			print();
-			_getch();
+			if (control == 1)
+				_getch();
 			t = clock();
 		}
 		clean();
-		boardmove();
+		if (control == 0)
+			mousemove();
+		else if (control == 1)
+			boardmove();
 		crash();
 		ballmove();
 		print();

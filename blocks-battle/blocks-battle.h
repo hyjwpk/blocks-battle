@@ -3,7 +3,7 @@
 #pragma comment(lib,"Winmm.lib")//µ˜”√Winmm.libø‚≤•∑≈“Ù¿÷
 
 //ball
-double ballx, bally, x_move, y_move;
+double ballx, bally, x_move, y_move=2;
 int radius, ballcolor;
 //board
 int boardx, boardy, boardhigh, boardwidth, boardleft, boardright, boardtop, boardbottom;
@@ -16,7 +16,7 @@ int stage, colortype, score;
 int map[BRICKLINE][BRICKROW], color[BRICKLINE][BRICKROW];
 clock_t t, t_save;
 //settings
-int tough,soundmode,timesetting,speed;
+int tough,soundmode,timesetting,speed=10,control;
 //flash
 int flashx, flashy, flashvanish;
 

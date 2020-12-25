@@ -21,5 +21,5 @@ extern int stage, colortype, score;
 extern int map[BRICKLINE][BRICKROW], color[BRICKLINE][BRICKROW];
 extern clock_t t, t_save;
 extern Music mu_background,mu_crash, mu_dead;
-extern int tough, soundmode, timesetting, speed;
+extern int tough, soundmode, timesetting, speed,control;
 extern int flashx, flashy, flashvanish;

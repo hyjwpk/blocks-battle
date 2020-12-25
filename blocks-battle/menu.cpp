@@ -65,16 +65,17 @@ void script(void)
 	setfillcolor(0xeeeeee);
 	setlinecolor(0xcccccc);
 	for (int i = 1; i <= 60; i++) {
-		fillroundrect((WIDTH1 - 400) / 2, HIGH / 2 - 250 / 2 * i / 60, (WIDTH1 + 400) / 2, HIGH / 2 + 250 / 2 * i / 60, 60, 20);
+		fillroundrect((WIDTH1 - 400) / 2, HIGH / 2 - 270 / 2 * i / 60, (WIDTH1 + 400) / 2, HIGH / 2 + 270 / 2 * i / 60, 60, 20);
 		FlushBatchDraw();
 		Sleep(3);
 	}
 
 	settextcolor(BLACK);
 	settextstyle(30, 0, "微软雅黑", 0, 0, 400, false, false, false, DEFAULT_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, ANTIALIASED_QUALITY, DEFAULT_PITCH);
-	outtextxy(340, 220, "使用方向键操控横板击打小球");
-	outtextxy(340, 280, "游戏中按ESC存档并返回菜单");
-	outtextxy(340, 340, "使用ADZC键大幅度移动,W暂停");
+	outtextxy(320, 200, "使用方向键或鼠标操控横板击打小球");
+	outtextxy(320, 260, "游戏中按ESC键存档并返回菜单");
+	outtextxy(320, 320, "使用ADZC键大幅度移动,W暂停");
+	outtextxy(320, 380, "速度有分数加成，限时有概率加成");
 	FlushBatchDraw();
 
 	_getch();
@@ -87,26 +88,37 @@ void settings(void)
 	Button btn_tough(425, 240, 120, 30, "难度:１");
 	Button btn_music(425, 280, 120, 30, "音乐:开");
 	Button btn_time(425, 320, 120, 30, "限时:关");
-	Button btn_back(425, 360, 120, 30, "返回");
+	Button btn_control(425, 360, 120, 30, "鼠标");
+	Button btn_back(425, 400, 120, 30, "返回");
 
 	if (tough == 0)
+	{
 		btn_tough.ChangeButtonText("难度:１");
+	}
 	else if (tough == 1)
+	{
 		btn_tough.ChangeButtonText("难度:２");
+	}
 	else if (tough == 2)
+	{
 		btn_tough.ChangeButtonText("难度:３");
-
+	}
 	if (soundmode == 0)
 		btn_music.ChangeButtonText("音乐:开");
 	else if (soundmode == 1)
 		btn_music.ChangeButtonText("音乐:关");
 
+	if (control == 0)
+		btn_control.ChangeButtonText("鼠标");
+	else if (control == 1)
+		btn_control.ChangeButtonText("键盘");
+
 	if (timesetting == 0)
 		btn_time.ChangeButtonText("限时:关");
 	else if (timesetting == 1)
-		btn_time.ChangeButtonText("５０ｓ");
-	else if (timesetting == 2)
 		btn_time.ChangeButtonText("５００ｓ");
+	else if (timesetting == 2)
+		btn_time.ChangeButtonText("５０ｓ");
 
 	while (1) 
 	{
@@ -121,9 +133,26 @@ void settings(void)
 		btn_tough.Show();
 		btn_music.Show();
 		btn_time.Show();
+		btn_control.Show();
 		btn_back.Show();
 
 		FlushBatchDraw();
+
+		if (tough == 0)
+		{
+			y_move = 2;
+			speed = 10;
+		}
+		else if (tough == 1)
+		{
+			y_move = 3;
+			speed = 15;
+		}
+		else if (tough == 2)
+		{
+			y_move = 4;
+			speed = 20;
+		}
 
 		if (btn_tough.press)
 		{
@@ -162,18 +191,31 @@ void settings(void)
 		{
 			if (timesetting == 0)
 			{
-				btn_time.ChangeButtonText("５０ｓ");
+				btn_time.ChangeButtonText("５００ｓ");
 				timesetting = 1;
 			}
 			else if (timesetting == 1)
 			{
-				btn_time.ChangeButtonText("５００ｓ");
+				btn_time.ChangeButtonText("５０ｓ");
 				timesetting = 2;
 			}
 			else if (timesetting == 2)
 			{
 				btn_time.ChangeButtonText("限时:关");
 				timesetting = 0;
+			}
+		}
+		else if (btn_control.press)
+		{
+			if (control == 0)
+			{
+				btn_control.ChangeButtonText("键盘");
+				control = 1;
+			}
+			else if (control == 1)
+			{
+				btn_control.ChangeButtonText("鼠标");
+				control = 0;
 			}
 		}
 		else if (btn_back.press)

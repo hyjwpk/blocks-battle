@@ -153,20 +153,17 @@ void initial(int type)//1为读取关卡,2为读取存档
 	if (tough == 0)
 	{
 		boardwidth = WIDTH2 / 3;
-		y_move = 2;
-		speed = 10;
+
 	}
 	else if (tough == 1)
 	{
 		boardwidth = WIDTH2 / 4;
-		y_move = 3;
-		speed = 15;
+
 	}
 	else if (tough == 2)
 	{
 		boardwidth = WIDTH2 / 5;
-		y_move = 4;
-		speed = 20;
+
 	}
 
 
@@ -184,6 +181,9 @@ void initial(int type)//1为读取关卡,2为读取存档
 
 	brickwidth	= WIDTH2 / BRICKROW;
 	brickhigh	= brickwidth / 2;
+
+	heartvanish = 0;
+	flashvanish = 0;
 
 	nowheart = 3;
 	t = 0;

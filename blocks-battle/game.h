@@ -7,4 +7,5 @@ extern void crash(void);
 extern void ballmove(void);
 extern void sortscore();
 extern void fail(void);
+extern void mousemove(void);
 #include "music.h"
