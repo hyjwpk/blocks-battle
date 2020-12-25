@@ -124,17 +124,23 @@ void crash(void)
 					bricknumber--;
 					y_move = -y_move;
 					score+=speed/5;
-					if (heartvanish == 0 && (rand() % 100) > 90-timesetting*5)
+					if ((rand() % 100) > 50)
 					{
-						heartvanish = 1;
-						hearty = bally;
-						heartx = ballx;
+						if (heartvanish == 0 && (rand() % 100) > 90 - timesetting * 5)
+						{
+							heartvanish = 1;
+							hearty = bally;
+							heartx = ballx;
+						}
 					}
-					if (flashvanish == 0 && (rand() % 100) > 90)
+					else
 					{
-						flashvanish = 1;
-						flashy = bally;
-						flashx = ballx;
+						if (flashvanish == 0 && (rand() % 100) > 90)
+						{
+							flashvanish = 1;
+							flashy = bally;
+							flashx = ballx;
+						}
 					}
 				}
 				else if ((bally>= k * brickhigh ) && (bally <= k * brickhigh + brickhigh) && (ballx+x_move >= i * brickwidth) && (ballx + x_move <= (i+1) * brickwidth))
@@ -150,17 +156,23 @@ void crash(void)
 					bricknumber--;
 					x_move = -x_move;
 					score += speed / 5;
-					if (heartvanish == 0 && (rand() % 100) > 90 - timesetting * 5)
+					if ((rand() % 100) > 50)
 					{
-						heartvanish = 1;
-						hearty = bally;
-						heartx = ballx;
+						if (heartvanish == 0 && (rand() % 100) > 90 - timesetting * 5)
+						{
+							heartvanish = 1;
+							hearty = bally;
+							heartx = ballx;
+						}
 					}
-					if (flashvanish == 0 && (rand() % 100) > 90)
+					else
 					{
-						flashvanish = 1;
-						flashy = bally;
-						flashx = ballx;
+						if (flashvanish == 0 && (rand() % 100) > 90)
+						{
+							flashvanish = 1;
+							flashy = bally;
+							flashx = ballx;
+						}
 					}
 				}
 			}
