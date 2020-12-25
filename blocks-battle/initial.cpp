@@ -176,8 +176,10 @@ void initial(int type)//1为读取关卡,2为读取存档
 
 	radius = 10;
 	ballx = WIDTH2 / 2;
-	bally = (double)boardtop-radius;
+	bally = 12*boardhigh+(HIGH-12*boardhigh)/2;
 	ballcolor = BLUE;
+	x_move = 0;
+	y_move = -fabs(y_move);
 
 	brickwidth	= WIDTH2 / BRICKROW;
 	brickhigh	= brickwidth / 2;

@@ -3,7 +3,7 @@
 #pragma comment(lib,"Winmm.lib")//µ˜”√Winmm.libø‚≤•∑≈“Ù¿÷
 
 //ball
-double ballx, bally, x_move, y_move=2;
+double ballx, bally, x_move, y_move=-2;
 int radius, ballcolor;
 //board
 int boardx, boardy, boardhigh, boardwidth, boardleft, boardright, boardtop, boardbottom;

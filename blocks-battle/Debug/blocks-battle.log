@@ -1,13 +1,3 @@
-﻿  graph.cpp
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\graph.cpp(176,11): warning C4305: “=”: 从“double”到“float”截断
-  move.cpp
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(132,17): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(133,17): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(141,17): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(142,17): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(164,17): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(165,17): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(173,17): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\move.cpp(174,17): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-  正在生成代码...
+﻿  initial.cpp
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\initial.cpp(250,12): warning C4305: “+=”: 从“double”到“float”截断
   blocks-battle.vcxproj -> C:\Users\wangc\source\repos\blocks-battle\Debug\blocks-battle.exe
