@@ -1,10 +1,18 @@
 #pragma once
 #include "button.h"
+#include "start.h"
+#include "load.h"
+#include "settings.h"
+#include "script.h"
+#include "top.h"
+#include "exit.h"
+#include "musicbtn.h"
 
-
-extern void clean(void);
-extern void game(void);
-extern void initial(int type);
-
-
-void menu(void);
+class Menu
+{
+public:
+	static void menuControl();
+private:
+	static void title();
+	static bool pressMenuButton(Button* btn[]);
+};

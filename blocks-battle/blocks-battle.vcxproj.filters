@@ -18,19 +18,10 @@
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="initial.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="graph.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="menu.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="game.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="move.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="blocks-battle.cpp">
@@ -45,6 +36,57 @@
     <ClCompile Include="music.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="exit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="top.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="script.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="settings.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="start.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="load.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="difficulty.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="musicbtn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="time.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="star.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="heart.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="flash.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="color.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ball.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="board.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="brick.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -57,15 +99,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="menu.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="graph.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="move.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="initial.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="blocks-battle.h">
@@ -83,6 +116,57 @@
     <ClInclude Include="music.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="exit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="top.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="script.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="settings.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="start.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="load.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="difficulty.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="musicbtn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="time.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="star.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="heart.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="flash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="color.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ball.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="board.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="brick.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="blocks-battle.rc">
@@ -93,10 +177,7 @@
     <Image Include="..\Debug\resourses\picture\heart.png">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="..\Debug\resourses\picture\heart2.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="..\Debug\resourses\picture\stage.png">
+    <Image Include="..\Debug\resourses\picture\heartmask.png">
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="..\Debug\resourses\picture\background.jpg">
@@ -105,13 +186,10 @@
     <Image Include="..\Debug\resourses\picture\球.ico">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="..\Debug\resourses\picture\stage2.png">
-      <Filter>资源文件</Filter>
-    </Image>
     <Image Include="..\Debug\resourses\picture\tflash.png">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="..\Debug\resourses\picture\tflash1.png">
+    <Image Include="..\Debug\resourses\picture\tflashmask.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
@@ -129,5 +207,8 @@
     <Media Include="..\Debug\resourses\sound\background.mp3" />
     <Media Include="..\Debug\resourses\sound\crash.mp3" />
     <Media Include="..\Debug\resourses\sound\dead.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

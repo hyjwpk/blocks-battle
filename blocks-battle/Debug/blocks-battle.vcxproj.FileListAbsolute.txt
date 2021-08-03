@@ -1,0 +1,2 @@
+C:\Users\wangc\source\repos\blocks-battle\Debug\blocks-battle.exe.lastcodeanalysissucceeded
+C:\Users\wangc\source\repos\blocks-battle\blocks-battle\Debug\NativeCodeAnalysis.read.1.tlog

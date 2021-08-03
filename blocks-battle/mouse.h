@@ -3,15 +3,6 @@
 class Mouse
 {
 public:
-	Mouse();
-	bool getClick();
-	void setClick(bool state);
-	bool getLBdown();
-	void setLBdown(bool state);
-	MOUSEMSG msg;
-private:
-	bool click;
-	bool LBdown;
+	static EASYXMSG msg;
+	static DWORD WINAPI Thread_GetEASYXMSG(PVOID pMyPara);
 };
-
-DWORD WINAPI Thread_GetMouseMsg(PVOID pMyPara);

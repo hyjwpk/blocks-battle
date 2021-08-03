@@ -1,0 +1,351 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30040.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00D8C1D0 -allChunksReserved -il C:\\Users\\wangc\\AppData\\Local\\Temp\\_CL_49ccf75dast -typedil -f heart.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930040 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MT -clrNoPureCRT -D_MT -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -Yupch.h -FpDebug\\blocks-battle.pch -FoDebug\\heart.obj -FdDebug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory C:\\Users\\wangc\\source\\repos\\blocks-battle\\blocks-battle -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.7.1\\Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -external:I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.7.1\\Include\\um -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.7.1\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/star.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "84136098d296a244dd6ce6c952563436"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/pch.h"
+          },
+          "hashes": {
+            "md5": "1bb94053ce90f11751430ac665995a9e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft visual studio/2019/community/vc/auxiliary/vs/include/graphics.h"
+          },
+          "hashes": {
+            "md5": "29ac42151b343e2825b054be35098344"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft visual studio/2019/community/vc/auxiliary/vs/include/easyx.h"
+          },
+          "hashes": {
+            "md5": "ef9283289cbae1df7ae6e954f169206c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/define.h"
+          },
+          "hashes": {
+            "md5": "6dea5579e91ec560194b0129dd86034c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/resource.h"
+          },
+          "hashes": {
+            "md5": "2057e758776a1865bc7ea4b1dd8e404a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/star.h"
+          },
+          "hashes": {
+            "md5": "6be90ea65f9c8e569992e9e57e3d0975"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/stage.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "d1432ae205e083e2340e7e84d771fa41"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/stage.h"
+          },
+          "hashes": {
+            "md5": "b83ac6e3c95d166a41b2a6a10054943e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/color.h"
+          },
+          "hashes": {
+            "md5": "64f6542d7a3dc718f5d8bc5f38045c02"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/game.h"
+          },
+          "hashes": {
+            "md5": "afb81020abf14fdcd1b4cefae9294d3e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/music.h"
+          },
+          "hashes": {
+            "md5": "26e291da219c8a9f7817db1e0396be2b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/menu.h"
+          },
+          "hashes": {
+            "md5": "0f7f7d03056755dea40c55062642ac64"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/button.h"
+          },
+          "hashes": {
+            "md5": "570ea83e33e5a074a836a82c12cfc434"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/mouse.h"
+          },
+          "hashes": {
+            "md5": "985af55aeeea3d645893535983168150"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/start.h"
+          },
+          "hashes": {
+            "md5": "53e21f9880114f3eca467d7b15bee505"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/load.h"
+          },
+          "hashes": {
+            "md5": "d27b8bc62276ae5660236379da0d10f4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/ball.h"
+          },
+          "hashes": {
+            "md5": "fbde25bb50bfe821df56ef5d56e3625f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/heart.h"
+          },
+          "hashes": {
+            "md5": "7628cd982a7d128b3872c0959c318ea6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/board.h"
+          },
+          "hashes": {
+            "md5": "1dca6b271376c4c76f69e53fb63f2017"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/difficulty.h"
+          },
+          "hashes": {
+            "md5": "e5500fc87c0a9c6684f578045939eb42"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/top.h"
+          },
+          "hashes": {
+            "md5": "ddc040f6812e8ba18b9412c712c963b7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/settings.h"
+          },
+          "hashes": {
+            "md5": "f4c89ea26d9240c254312c77a04c2c71"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/musicbtn.h"
+          },
+          "hashes": {
+            "md5": "4e448871f2a3f8268f7558ce15298f3c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/time.h"
+          },
+          "hashes": {
+            "md5": "c96fcea5c5b6b386055a85fae8b76e0f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/script.h"
+          },
+          "hashes": {
+            "md5": "7bc3d2a53bf0563a23f6f0c898467018"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/exit.h"
+          },
+          "hashes": {
+            "md5": "ac8d37794c9277b6045993ca035d9428"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/flash.h"
+          },
+          "hashes": {
+            "md5": "524cab70a96a9290e71aa405ca0b6742"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/brick.h"
+          },
+          "hashes": {
+            "md5": "7127443300213d4ee299085d39b73058"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/settings.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "33c944606cefd8e6989cb0d8bc4d32a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/script.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "dd07ab45885d12d1331f65732cacdc94"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/musicbtn.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "302037caed6bd183d37b6501e3d84bfa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/music.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "f1b423c2d126520a32da33d889d37ab8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/menu.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "ee02fd6014d16f67bf6a4a3cfbbf26fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/mouse.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "b243512f7fde48cb439f6294060af310"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/load.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "1db0557707570543ccdc0e7db141c21b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/wangc/source/repos/blocks-battle/blocks-battle/heart.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "3998317189efc260196005de6dae2039"
+          }
+        }
+      ]
+    }
+  ]
+}

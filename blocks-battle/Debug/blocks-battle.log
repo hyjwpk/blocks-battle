@@ -1,3 +1,30 @@
-﻿  initial.cpp
-C:\Users\wangc\source\repos\blocks-battle\blocks-battle\initial.cpp(250,12): warning C4305: “+=”: 从“double”到“float”截断
+﻿  pch.cpp
+  ball.cpp
+  blocks-battle.cpp
+  board.cpp
+  brick.cpp
+  button.cpp
+  color.cpp
+  difficulty.cpp
+  exit.cpp
+  flash.cpp
+  game.cpp
+  heart.cpp
+  load.cpp
+  mouse.cpp
+  menu.cpp
+  music.cpp
+  musicbtn.cpp
+  script.cpp
+  settings.cpp
+  stage.cpp
+  star.cpp
+  正在运行 C/C++ 代码分析...
+  正在生成代码...
+  正在编译...
+  start.cpp
+  time.cpp
+  top.cpp
+  正在运行 C/C++ 代码分析...
+  正在生成代码...
   blocks-battle.vcxproj -> C:\Users\wangc\source\repos\blocks-battle\Debug\blocks-battle.exe

@@ -3,9 +3,9 @@
 
 int main(void)
 {
-	initgraph(WIDTH1, HIGH, EW_NOCLOSE);//禁用绘图窗口的关闭按钮。
+	initgraph(WIDTH1, HIGH, EW_NOCLOSE | EW_NOMINIMIZE);
 	SetWindowText(GetHWnd(), "BLOCKS-BATTLE");
-	CreateThread(NULL, 0, Thread_GetMouseMsg, NULL, 0, NULL);
-	menu();
+	CreateThread(NULL, 0, Mouse::Thread_GetEASYXMSG, NULL, 0, NULL);
+	Menu::menuControl();
 	return 0;
 }
