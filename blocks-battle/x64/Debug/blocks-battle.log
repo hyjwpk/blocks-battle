@@ -1,0 +1,107 @@
+﻿  music.cpp
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(5,1): error C2511: “Music::Music(int,const TCHAR *)”:“Music”中没有找到重载的成员函数
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.h(4): message : 参见“Music”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(6,25): error C2597: 对非静态成员“Music::mp3File”的非法引用
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.h(14): message : 参见“Music::mp3File”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(7,9): error C2597: 对非静态成员“Music::mp3File”的非法引用
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.h(14): message : 参见“Music::mp3File”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(8,9): error C2597: 对非静态成员“Music::mp3File”的非法引用
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.h(14): message : 参见“Music::mp3File”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(9,18): error C2597: 对非静态成员“Music::mp3File”的非法引用
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.h(14): message : 参见“Music::mp3File”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(14,39): error C2664: “int sprintf_s(char *const ,const size_t,const char *const ,...)”: 无法将参数 1 从“TCHAR [300]”转换为“char *const ”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(14,12): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h(1815,41): message : 参见“sprintf_s”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(37,45): error C2664: “int sprintf_s(char *const ,const size_t,const char *const ,...)”: 无法将参数 1 从“TCHAR [300]”转换为“char *const ”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(37,12): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h(1815,41): message : 参见“sprintf_s”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(43,38): error C2664: “int sprintf_s(char *const ,const size_t,const char *const ,...)”: 无法将参数 1 从“TCHAR [300]”转换为“char *const ”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(43,12): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h(1815,41): message : 参见“sprintf_s”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(49,38): error C2664: “int sprintf_s(char *const ,const size_t,const char *const ,...)”: 无法将参数 1 从“TCHAR [300]”转换为“char *const ”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\music.cpp(49,12): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h(1815,41): message : 参见“sprintf_s”的声明
+  musicbtn.cpp
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\musicbtn.cpp(6,83): error C2664: “Button::Button(int,int,int,int,const TCHAR *,int,int,COLORREF)”: 无法将参数 5 从“const char *”转换为“const TCHAR *”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\musicbtn.cpp(6,106): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\button.h(7,2): message : 参见“Button::Button”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\musicbtn.cpp(23,44): error C2440: “=”: 无法从“const char [8]”转换为“const TCHAR *”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\musicbtn.cpp(23,32): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\musicbtn.cpp(24,50): error C2440: “=”: 无法从“const char [8]”转换为“const TCHAR *”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\musicbtn.cpp(24,38): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+  script.cpp
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(20,37): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(247,6): message : 可能是“void settextstyle(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(20,37): message : 尝试匹配参数列表“(int, int, const char [9])”时
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(22,35): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(224,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(223,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(22,35): message : 尝试匹配参数列表“(int, int, const char [9])”时
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(24,35): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(224,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(223,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(24,35): message : 尝试匹配参数列表“(int, int, const char [9])”时
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(43,36): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(247,6): message : 可能是“void settextstyle(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(43,36): message : 尝试匹配参数列表“(int, int, const char [9])”时
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(44,72): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(224,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(223,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(44,72): message : 尝试匹配参数列表“(int, int, const char [33])”时
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(45,63): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(224,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(223,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(45,63): message : 尝试匹配参数列表“(int, int, const char [28])”时
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(46,60): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(224,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(223,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(46,60): message : 尝试匹配参数列表“(int, int, const char [27])”时
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(47,69): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(224,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(223,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\script.cpp(47,69): message : 尝试匹配参数列表“(int, int, const char [31])”时
+  settings.cpp
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\settings.cpp(12,51): error C2664: “Difficulty::Difficulty(int,int,int,int,const TCHAR *)”: 无法将参数 5 从“const char [8]”转换为“const TCHAR *”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\settings.cpp(12,37): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\difficulty.h(12,2): message : 参见“Difficulty::Difficulty”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\settings.cpp(29,37): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(247,6): message : 可能是“void settextstyle(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\settings.cpp(29,37): message : 尝试匹配参数列表“(int, int, const char [9])”时
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\settings.cpp(31,35): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(224,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(223,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\settings.cpp(31,35): message : 尝试匹配参数列表“(int, int, const char [9])”时
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\settings.cpp(33,35): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(224,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(223,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\settings.cpp(33,35): message : 尝试匹配参数列表“(int, int, const char [9])”时
+  stage.cpp
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(11,33): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(247,6): message : 可能是“void settextstyle(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(11,33): message : 尝试匹配参数列表“(int, int, const char [9])”时
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(13,23): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(224,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(223,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(13,23): message : 尝试匹配参数列表“(int, int, char [8])”时
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(15,23): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(224,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\VS\include\easyx.h(223,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(15,23): message : 尝试匹配参数列表“(int, int, char [8])”时
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(22,80): error C2664: “HRSRC FindResourceW(HMODULE,LPCWSTR,LPCWSTR)”: 无法将参数 3 从“const char [5]”转换为“LPCWSTR”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(22,74): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\libloaderapi.h(642,1): message : 参见“FindResourceW”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(28,29): error C2664: “char *strcat(char *,const char *)”: 无法将参数 1 从“TCHAR [260]”转换为“char *”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(28,9): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h(91,1): message : 参见“strcat”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(30,30): error C2664: “FILE *fopen(const char *,const char *)”: 无法将参数 1 从“TCHAR [260]”转换为“const char *”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(30,22): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h(213,28): message : 参见“fopen”的声明
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(34,24): error C2664: “FILE *fopen(const char *,const char *)”: 无法将参数 1 从“TCHAR [260]”转换为“const char *”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\stage.cpp(34,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h(213,28): message : 参见“fopen”的声明
+  time.cpp
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\time.cpp(8,75): error C2664: “Button::Button(int,int,int,int,const TCHAR *,int,int,COLORREF)”: 无法将参数 5 从“const char *”转换为“const TCHAR *”
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\time.cpp(8,98): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Users\wangc\source\repos\hyjwpk\blocks-battle\blocks-battle\button.h(7,2): message : 参见“Button::Button”的声明
+  top.cpp
+  正在生成代码...
